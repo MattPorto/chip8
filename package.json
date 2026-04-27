@@ -1,0 +1,15 @@
+{
+  "name": "chip8",
+  "version": "1.0.0",
+  "description": "‎ A Chip-8 interpreter written in JavaScript for web, CLI, and native UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}

@@ -5,13 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^30.3.0"
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^30.3.0",
+    "prettier": "^3.8.3"
   }
 }

@@ -1,4 +1,4 @@
-import { Instructions } from "./instructions";
+import { instructionMap } from "./instructionMap";
 
 export class CPU {
   // Sets the CPU core and initial states
@@ -33,13 +33,7 @@ export class CPU {
 
     // The instructions "schema"
     // First nibble (0-F) mapped for specific methods
-    this.instructionMap = {
-      0x0: Instructions.handleType0, // Instructions that starts with 0
-      0x1: Instructions.jp,          // 1NNN
-      0x6: Instructions.ldByte,      // 6XKK
-      0x7: Instructions.addByte,     // 7XKK
-      0xA: Instructions.ldI,         // ANNN
-    }
+    this.instructionMap = instructionMap;
   }
 
   execute(opcode) {

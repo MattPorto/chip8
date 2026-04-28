@@ -51,6 +51,7 @@ export class CPU {
 
     if (!instruction) {
       console.warn(`Instruction 0x${opcode.toString(16)} not mapped.`);
+      return;
     }
 
     instruction(opcode);
